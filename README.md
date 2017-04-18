@@ -5,9 +5,12 @@
 
 ## 安装
 
-npm i -g steamerjs
+```javascript
+// tnpm是内部npm管理命令行工具
+tnpm i -g steamerjs
 
-npm i -g steamer-plugin-alloystore
+tnpm i -g steamer-plugin-alloystore
+```
 
 
 ## 推荐脚手架
