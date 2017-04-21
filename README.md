@@ -1,4 +1,4 @@
-## steamer-plugin-alloystore
+# steamer-plugin-alloystore
 
 将组件上传或更新至alloystore(一个组件展示平台)
 
