@@ -1,4 +1,4 @@
-## steamer-plugin-alloystore
+# steamer-plugin-alloystore
 
 将组件上传或更新至alloystore(一个组件展示平台)
 
@@ -34,6 +34,15 @@ tnpm i -g steamer-plugin-alloystore
     "id": 84
 }
 ```
+
+* 开发demo的时候，你可以会将 `src` 里的入口文件进行引用，此时建议在 `webpack` 的 `alias` 中为组件设置别名，直接指向 `src` 中的入口文件，这样一来，你可以方便地这样引用：
+
+```javascript
+import Index from 'react-list-scroll';
+```
+
+* 开发demo的时候，请将最终 `export` 的 `class`，名字改成 `Main`，这样才能被 `Alloystore` 识别。
+
 
 
 ## 使用
