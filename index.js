@@ -14,7 +14,18 @@ AlloystorePlugin.prototype.init = function() {
 };
 
 AlloystorePlugin.prototype.help = function() {
-	
+	this.utils.printUsage('steamer alloytore upload helper', 'alloystore');
+	this.utils.printOption([
+		{
+			option: "update",
+			alias: "u",
+			value: "example",
+			description: "only upload example"
+		},
+		{
+			description: "upload or update component in alloystore"
+		}
+	]);
 };
 
 module.exports = AlloystorePlugin;
