@@ -1,6 +1,6 @@
 {
   "name": "steamer-plugin-alloystore",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "steamer-plugin-alloystore",
   "main": "index.js",
   "bin": "index.js",
