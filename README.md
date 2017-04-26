@@ -30,9 +30,40 @@ tnpm i -g steamer-plugin-alloystore
 
 ```javascript
 "alloystore": {
-    "demo": "example/src/index/container/",
-    "id": 84
+    "demo": "example/src/index/container/"
 }
+```
+
+`example` 的配置也可以是 `Object`，此时写文件的完整路径。此时也可以带上 `html`。
+
+```javascript
+"alloystore": {
+    "demo": {
+    	"js": "example/src/index/container/index.js",
+    	"style": "example/src/index/container/index.less",
+    	"html": "example/src/index/index.html"
+    }
+}
+```
+
+`html`文件里的 `<script>` 标签，请不要写在 `<body>`标签里，因为命令行只会解析被上传 `<body>` 标签里的内容。如
+
+```html
+// 原html
+<!DOCTYPE html>
+<html>
+<head>
+  	<link rel="stylesheet" href="index">
+  	<script src="index"></script>
+</head>
+
+<body>
+	<div id="root"></div>
+</body>
+</html>
+
+// 上传内容
+<div id="root"></div>
 ```
 
 * 开发demo的时候，你可以会将 `src` 里的入口文件进行引用，此时建议在 `webpack` 的 `alias` 中为组件设置别名，直接指向 `src` 中的入口文件，这样一来，你可以方便地这样引用：
