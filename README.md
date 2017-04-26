@@ -66,7 +66,7 @@ tnpm i -g steamer-plugin-alloystore
 <div id="root"></div>
 ```
 
-* 开发demo的时候，你可以会将 `src` 里的入口文件进行引用，此时建议在 `webpack` 的 `alias` 中为组件设置别名，直接指向 `src` 中的入口文件，这样一来，你可以方便地这样引用：
+* 开发demo的时候，你可能会将 `src` 里的入口文件进行引用，此时建议在 `webpack` 的 `alias` 中为组件设置别名，直接指向 `src` 中的入口文件，这样一来，你可以方便地这样引用：
 
 ```javascript
 import Index from 'react-list-scroll';
