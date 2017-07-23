@@ -17,6 +17,8 @@ tnpm i -g steamer-plugin-alloystore
 
 组件开发推荐使用以下脚手架:
 * [steamer-react-component](https://github.com/SteamerTeam/steamer-react-component)
+* [steamer-vue-component](https://github.com/SteamerTeam/steamer-vue-component)
+* [steamer-simple-component](https://github.com/SteamerTeam/steamer-simple-component)
 
 组件的 `example` 需要符合以下规范，才能正确被读取，并上传到 `alloystore`
 
