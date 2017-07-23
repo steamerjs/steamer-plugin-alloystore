@@ -22,9 +22,9 @@ tnpm i -g steamer-plugin-alloystore
 
 * `example` 源码写在 `example/src` 下
 
-* `js` 代码仅且仅写在一个 `js` 文件中，此文件位置默认在 `example/src/container/index.js`
+* `js` 代码仅且仅写在一个 `js` 文件中，此文件位置默认在 `example/src/page/index/container/index.js`
 
-* `css` 或其它样式代码，仅写在一个文件中，此文件位置默认在 `example/src/container/` 下，与 `js` 文件同级，支持 `css|less|stylus|scss|sass` 5种后缀，名字为 `index.[ext]`，但在 `index.js` 中要引用，并以完整名称引用，如 `require('./index.css')`
+* `css` 或其它样式代码，仅写在一个文件中，此文件位置默认在 `example/src/page/index/container/` 下，与 `js` 文件同级，支持 `css|less|stylus|scss|sass` 5种后缀，名字为 `index.[ext]`，但在 `index.js` 中要引用，并以完整名称引用，如 `require('./index.css')` 或 `import './index.css`
 
 * 如果你想自定 `example` 路径，可以在 `package.json` 中设置，如下:
 
@@ -41,10 +41,12 @@ tnpm i -g steamer-plugin-alloystore
     "demo": {
     	"js": "example/src/index/container/index.js",
     	"style": "example/src/index/container/index.less",
-    	"html": "example/src/index/index.html"
+    	"html": "example/src/index/main.html"
     }
 }
 ```
+
+`html`文件默认路径是在 `example/src/page/index/main.html`。
 
 `html`文件里的 `<script>` 标签，请不要写在 `<body>`标签里，因为命令行只会解析被上传 `<body>` 标签里的内容。如
 
