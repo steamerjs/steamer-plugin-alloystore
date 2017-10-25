@@ -1,20 +1,24 @@
 "use strict";
 
-const pluginutils = require('steamer-pluginutils'),
+const SteamerPlugin = require('steamer-plugin'),
 	  AS = require('@tencent/alloystore-cli');
 
-function AlloystorePlugin(argv) {
-	this.argv = argv;
-	this.utils = new pluginutils("steamer-plugin-alloystore");
-	this.cli = new AS(argv);
+class AlloystorePlugin extends SteamerPlugin {
+	constructor(args) {
+		super(args);
+		this.argv = args;
+		this.pluginName = 'steamer-plugin-alloystore';
+		this.description = 'manage components for alloystore platform';
+		this.cli = new AS(argv);
+	}
+
+	init() {
+		this.cli.init();
+	}
+	
+	prototype() {
+		this.cli.help();
+	}
 }
-
-AlloystorePlugin.prototype.init = function() {
-	this.cli.init();
-};
-
-AlloystorePlugin.prototype.help = function() {
-	this.cli.help();
-};
 
 module.exports = AlloystorePlugin;
