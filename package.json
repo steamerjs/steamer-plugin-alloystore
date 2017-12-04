@@ -1,7 +1,7 @@
 {
   "name": "steamer-plugin-alloystore",
-  "version": "0.3.0",
-  "description": "steamer-plugin-alloystore",
+  "version": "0.3.1",
+  "description": "manage components for alloystore platform",
   "main": "index.js",
   "bin": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
   "homepage": "https://github.com/SteamerTeam/steamer-plugin-alloystore#readme",
   "dependencies": {
     "@tencent/alloystore-cli": "*",
-    "steamer-plugin": "^1.0.0"
+    "steamer-plugin": "^1.0.1"
   },
   "devDependencies": {},
   "engines": {
