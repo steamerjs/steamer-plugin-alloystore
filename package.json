@@ -1,7 +1,7 @@
 {
   "name": "steamer-plugin-alloystore",
-  "version": "0.2.0",
-  "description": "steamer-plugin-alloystore",
+  "version": "0.3.2",
+  "description": "manage components for alloystore platform",
   "main": "index.js",
   "bin": "index.js",
   "scripts": {
@@ -9,17 +9,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SteamerTeam/steamer-plugin-alloystore.git"
+    "url": "git+https://github.com/steamerjs/steamer-plugin-alloystore.git"
   },
   "keywords": [
     "steamer"
   ],
-  "author": "SteamerTeam",
+  "author": "steamerjs",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SteamerTeam/steamer-plugin-alloystore/issues"
+    "url": "https://github.com/steamerjs/steamer-plugin-alloystore/issues"
   },
-  "homepage": "https://github.com/SteamerTeam/steamer-plugin-alloystore#readme",
+  "homepage": "https://github.com/steamerjs/steamer-plugin-alloystore#readme",
   "dependencies": {
     "@tencent/alloystore-cli": "^1.1.1",
     "chalk": "^2.4.1",
